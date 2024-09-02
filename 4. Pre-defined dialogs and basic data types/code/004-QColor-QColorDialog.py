@@ -20,6 +20,9 @@ class DlgMain(QDialog):
     def evt_btn_clicked(self):
         color = QColorDialog.getColor(QColor("cornsilk"), self, "Choose Color")
         print(color)
+        print(color.getRgb()) # (255, 248, 220, 255)
+        print(color.name())  # #fff8dc
+        print(color.getHsl())
 
 
 if __name__ == "__main__":
